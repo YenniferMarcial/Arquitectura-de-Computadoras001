@@ -1,0 +1,78 @@
+DISCO DURO
+Un disco duro es un dispositivo utilizado por el ordenador para almacenar datos durante un tiempo largo. Los discos duros pertenecen a la llamada memoria secundaria, aunque su apariencia externa sea de una caja rectangular en el interior hay varios elementos como los discos metálicos que giran a gran velocidad, cabezas de lectura/escritura, el motor, etc. Los discos duros están compuestos por una estructura física y lógica, respecto a la estructura física se refiere a como está compuesto interiormente un disco duro, es decir, las piezas o componentes que la conforman como los platos, las cabezas de lectura/escritura, el impulsor de cabezal, las pistas, los sectores, etc. los cuales se ve su relación, en cuanto a número, de cada uno de estos componentes o piezas en la geometría de un disco duro. Con respecto a la estructura lógica está formada por el sector de arranque, la FAT (Tabla de asignación de ficheros), el directorio raíz y la zona de datos para archivos y subdirectorios.
+ESTRUCTURA LÓGICA DE UN DISCO DURO:
+La estructura lógica de un disco duro está formado por:
+    Sector de arranque.
+    Espacio particionado.
+    Espacio sin particionar.
+Sector de arranque: Es el primer sector de un disco duro en él se almacena la tabla de particiones y un programa pequeño llamado Master Boot. Este programa se encarga de leer la tabla de particiones y ceder el control al sector de arranque de la partición activa, en caso de que no existiese partición activa mostraría un mensaje de error.
+Espacio particionado: Es el espacio del disco que ha sido asignado a alguna partición.
+Espacio sin particionar: Es el espacio del disco que no ha sido asignado a ninguna partición.
+ 
+TIPOS DE DISCOS DUROS
+Los discos duros no son volátiles, lo que significa que retienen datos incluso cuando no tienen energía. La información almacenada permanece segura e intacta a menos que el disco duro sea destruido o interferido. La información se almacena o se recupera de manera aleatoria en lugar de acceso secuencial. Esto implica que se puede acceder a los bloques de datos en cualquier momento sin necesidad de pasar por otros bloques de datos.
+Los tipos de discos duros, son:
+•	Parallel Advanced Technology Attachment (PATA)
+•	Serial ATA (SATA)
+•	Interfaz de sistema de computadora pequeña (SCSI)
+•	Unidades de estado sólido (SSD)
+•	Adjunto de tecnología avanzada paralela
+También otros tipos de discos duros, son:
+•	SAS: Estos discos son muy solicitados para el empleo en servidores, es posible conectarlos hasta con 6 o 7 metros de distancia y de ahí en adelante cubrir hasta 24 computadoras.
+•	SCSI: Estos discos poseen una interfaz muy pequeña y exige de un controlador para que opere.
+•	IDE, ATA y PATA: Cada clase de disco duro representa o quiere decir: IDE. Es la abreviatura de componente electrónico integrado. ATA. Es la abreviatura de tecnología avanzada de contacto. PATA. Es la abreviatura de tecnología paralela avanzada.
+•	SATA: Esta sigla significa tecnología avanzada de contacto. Y se distingue por funcionar con una velocidad cercana a los 150 megabytes por segundo.
+•	SATA 2: Este dispositivo dispone de mejor capacidad debido a que funciona hasta con 300 megabytes por segundo, lo que representa que su tiempo de respuesta es muy bueno. DISCO DURO SATA 2 se diferencia en comparación con el SATA es que realiza sus actividades a 300Megabytes/segundo.
+TAZAS DE TRANSFERENCIA
+TASA DE TRANSFERENCIA (Transfer Rate)
+Este número indica la cantidad de datos un disco puede leer o escribir en la parte más exterior del disco o plato en un periodo de un segundo. Normalmente se mide en Mbits/segundo.
+RECOMENDACIONES
+•	PARA UN USUARIO NORMAL
+* 4,5GB mínimo
+* 5400RPM
+* 10ms de tiempo de acceso
+* Buffer de 128KB
+* Modo Ultra DMA-33
+•	PARA UN USUARIO DE ALTAS PRESTACIONES
+* 6,5GB mínimo
+* 7200RPM
+* 8ms de tiempo de acceso
+* Buffer de 512KB
+* Modo Ultra DMA-33 o SCSI
+•	PARA UN SERVIDOR O UNA ESTACÍON GRAFICA
+* 6,5GB mínimo
+* 7200RPM a 10.000rpm
+* 8ms de tiempo de acceso
+* Buffer de 1MB
+* Modo ULTRA-SCSI o ULTRA-WIDE SCSI
+•	SATA o SATA 1, con una velocidad de transmisión de 150MB/s, llamado también SATA 1.5Gb. Este tipo ya prácticamente no se utiliza, a pesar de su reciente aparición.
+•	SATA 2, con una velocidad de transmisión de 300MB/s, conocido también como SATA 3Gb. Es el tipo más utilizado, y suelen tener un jumper para poder utilizarlos como SATA 1.
+•	El tipo SATA 6Gb, con una velocidad de transmisión de 600 MBs.
+
+Elementos básicos de un procesador moderno
+En un procesador puedes encontrar los siguientes elementos:
+Núcleos. Una delas mejoras en las tecnologías de fabricación de los procesadores lo que ha conseguido es aumentar el número de transistores que pueden los fabricantes crear por unidad de área. Un mayor número de ellos conlleva que se puedan integrar más elementos. Los fabricantes gracias a esto han añadido varios núcleos en un mismo procesador. Cada uno de estos elementos no es más que un procesador pero reducido en tamaño. Al tener varios ciertas tareas se pueden acelerar al trabajar en paralelo.
+Cache. Es muy importante, para las prestaciones que el micro es capaz de dar, acelerar el uso de los accesos a memoria RAM. Ten en cuenta que en ella se encuentran tanto los datos como las instrucciones de los programas con los que estés trabajando. Un procesador tiene varios niveles de memoria cache pensada para acelerar estos accesos.
+Su idea de funcionamiento es sencilla, se almacenan en ella los datos e instrucciones a los que se accede más frecuentemente y al estar cerca del procesador el acceso es más rápido. Fuera del núcleo nos encontramos con la denominada LLC (Last level cache) que dependiendo del modelo es la tercera o segunda capa.
+Otros elementos integrados. Dependiendo de la arquitectura tendrán más elementos o menos en su interior. 
+Interconexionado interno. Todos estos elementos necesitan conectarse entre ellos para intercambiar información. Tenemos básicamente dos opciones o conectar líneas una a una entre todos los elementos lo cual complica algo el diseño o crear un bus al cual todos se conecten para compartir información.
+¿Qué hay en el interior de cada núcleo?
+A grandes rasgos podemos ver un núcleo como un procesador antiguo. Aunque si te acercas verías que el diseño ha ido adaptándose con muchas optimizaciones para mejorar las prestaciones.
+Unidad de control. De esta forma se denomina a un conjunto de elementos que puedes encontrar en el interior de un núcleo encargado de cargar las instrucciones y datos según se van ejecutando los programas.
+Al leer una instrucción, la divide en micro instrucciones más pequeñas de tal forma que pueden encargar su ejecución a los distintos elementos del núcleo. Estas micro instrucciones se pueden ejecutar por tanto en paralelo o incluso en un orden distinto del que llegan.
+Registros. Un registro no es más que una pequeña memoria que está integrada en el procesador.
+En ella es donde se almacenan los datos para ser procesados. Es la memoria más rápida de todo el sistema pero suelen ser muy pequeñas. Con el avance de las arquitecturas, al añadir más instrucciones, cada vez existen más tipos de registros.
+Unidad Aritmética Lógica. Conocida normalmente como ALU por sus siglas en inglés, es la encargada de realizar operaciones aritméticas y lógicas sobre números. En concreto estamos hablando de números enteros, es decir aquellos que no tienen decimales.
+Unidad de coma flotante. Realizan las mismas funciones que la ALU pero sobre números naturales. Sus siglas en ingles es FPU. Este elemento no siempre ha estado incluido dentro del chip si no que era un elemento externo y se llamaba coprocesador matemático. Con los años ha ganado cada vez más funcionalidades y su función sin duda es muy importante.
+Primeros niveles de cache. La cache más cercana a la unidad de control suele estar dividida en instrucciones y datos. De esta forma la unidad puede ir ejecutando varias instrucciones sin tener que estar continuamente leyendo de la RAM con cada nueva. Es muy común que existan al menos dos niveles de memoria cache en el interior del núcleo.
+¿Qué elementos se suelen integrar?
+Como ya te comente cada vez se añaden más elementos dentro del procesador, entre ellos puedes encontrar:
+Controlador de memoria. Antes tenías un elemento sobre la placa base que se encargaba de toda la comunicación entre el micro y la memoria RAM. Al incluir este en el interior del procesador conseguimos mejoras en la velocidad muy importantes.
+Tarjeta gráfica. Cada vez son más los modelos que incluyen una tarjeta gráfica en su interior. De esta forma conseguimos reducir el consumo y ahorrarnos dinero, al no tener que adquirir este dispositivo, en nuestro equipo. Por desgracia estas no son tan potentes como sus hermanas mayores las discretas de toda la vida.
+Controlador PCI Express. Al implementar internamente este componente la comunicación con la tarjeta gráfica discreta es directa. Es decir, se ha seguido la misma filosofía que con el controlador de memoria.
+Controlador del bus del sistema. El bus del sistema permite al procesador comunicarse con los periféricos que se encuentran en la placa base. Al incluirlo se consiguió otra vez una mejora en la velocidad global del sistema.
+
+ 
+
+
+
